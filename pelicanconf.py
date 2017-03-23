@@ -37,6 +37,7 @@ EXTRA_PATH_METADATA = {
     'extras/favicon.ico': {'path': 'favicon.ico'},
     'extras/manifest.json': {'path': 'manifest.json'},
     'extras/mstile-150x150.png': {'path': 'mstile-150x150.png'},
+    'extras/safari-pinned-tab.svg': {'path': 'safari-pinned-tab.svg'},
 }
 
 PLUGIN_PATHS = ['plugins']
