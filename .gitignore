@@ -5,7 +5,7 @@
 *.swp
 *.out
 *.py[cod]
-output*
+output/*
 .idea/*
 .env
 *.ipr
