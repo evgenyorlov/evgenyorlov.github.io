@@ -27,7 +27,7 @@ DEFAULT_PAGINATION = 10
 
 STATIC_PATHS = ['extras', 'images']
 EXTRA_PATH_METADATA = {
-    'extra/CNAME': {'path': 'CNAME'},
+    'extras/CNAME': {'path': 'CNAME'},
     'extras/android-chrome-192x192.png': {'path': 'android-chrome-192x192.png'},
     'extras/android-chrome-256x256.png': {'path': 'android-chrome-256x256.png'},
     'extras/apple-touch-icon.png': {'path': 'apple-touch-icon.png'},
