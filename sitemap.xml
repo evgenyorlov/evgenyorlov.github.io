@@ -2,46 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://evgenyorlov.github.io/posts/papermod/papermod-installation/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://evgenyorlov.github.io/posts/papermod/papermod-features/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://evgenyorlov.github.io/posts/papermod/papermod-faq/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://evgenyorlov.github.io/posts/papermod/papermod-icons/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://evgenyorlov.github.io/posts/papermod/papermod-variables/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://evgenyorlov.github.io/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://evgenyorlov.github.io/tags/papermod/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://evgenyorlov.github.io/series/papermod/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://evgenyorlov.github.io/posts/papermod/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://evgenyorlov.github.io/posts/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://evgenyorlov.github.io/series/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://evgenyorlov.github.io/tags/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
+    <loc>https://evgenyorlov.github.io/blog/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://evgenyorlov.github.io/categories/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://evgenyorlov.github.io/tags/css/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://evgenyorlov.github.io/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://evgenyorlov.github.io/tags/html/</loc>
@@ -50,10 +20,13 @@
     <loc>https://evgenyorlov.github.io/tags/markdown/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://evgenyorlov.github.io/posts/markdown-syntax/</loc>
+    <loc>https://evgenyorlov.github.io/blog/markdown-syntax/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://evgenyorlov.github.io/categories/syntax/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://evgenyorlov.github.io/tags/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://evgenyorlov.github.io/tags/themes/</loc>
@@ -62,34 +35,35 @@
     <loc>https://evgenyorlov.github.io/categories/themes/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://evgenyorlov.github.io/series/themes-guide/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://evgenyorlov.github.io/tags/privacy/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://evgenyorlov.github.io/posts/rich-content/</loc>
+    <loc>https://evgenyorlov.github.io/blog/rich-content/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://evgenyorlov.github.io/tags/shortcodes/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://evgenyorlov.github.io/posts/placeholder-text/</loc>
+    <loc>https://evgenyorlov.github.io/blog/placeholder-text/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://evgenyorlov.github.io/tags/text/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://evgenyorlov.github.io/posts/math-typesetting/</loc>
+    <loc>https://evgenyorlov.github.io/blog/math-typesetting/</loc>
     <lastmod>2019-03-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://evgenyorlov.github.io/tags/emoji/</loc>
     <lastmod>2019-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://evgenyorlov.github.io/posts/emoji-support/</loc>
+    <loc>https://evgenyorlov.github.io/blog/emoji-support/</loc>
     <lastmod>2019-03-05T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://evgenyorlov.github.io/about/</loc>
+  </url><url>
     <loc>https://evgenyorlov.github.io/archives/</loc>
+  </url><url>
+    <loc>https://evgenyorlov.github.io/cv/</loc>
   </url><url>
     <loc>https://evgenyorlov.github.io/search/</loc>
   </url>
