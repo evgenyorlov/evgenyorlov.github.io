@@ -23,7 +23,6 @@
 <link rel=alternate hreflang=fa href=https://evgenyorlov.github.io/fa/series/themes-guide/>
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
-<style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
 </noscript><meta property="og:title" content="Themes Guide">
 <meta property="og:description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod">
 <meta property="og:type" content="website">
@@ -33,8 +32,8 @@
 <meta name=twitter:title content="Themes Guide">
 <meta name=twitter:description content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod">
 </head>
-<body class=list id=top>
-<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
+<body class="list dark" id=top>
+<script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove('dark')</script>
 <header class=header>
 <nav class=nav>
 <div class=logo>
@@ -62,7 +61,7 @@
 </nav>
 </header>
 <main class=main>
-<header class=page-header><div class=breadcrumbs><a href=https://evgenyorlov.github.io/fa/>خانه</a>&nbsp;»&nbsp;<a href=https://evgenyorlov.github.io/fa/series/>Series</a></div>
+<header class=page-header>
 <h1>Themes Guide</h1>
 </header>
 <article class="post-entry tag-entry">
@@ -74,7 +73,7 @@
 <p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
 ...</p>
 </section>
-<footer class=entry-footer><span title="2019-03-11 00:00:00 +0000 UTC">March 11, 2019</span>&nbsp;·&nbsp;3 دقیقه&nbsp;·&nbsp;Hugo Authors</footer>
+<footer class=entry-footer><span title="2019-03-11 00:00:00 +0000 UTC">March 11, 2019</span>&nbsp;·&nbsp;Hugo Authors</footer>
 <a class=entry-link aria-label="post link to Markdown Syntax Guide For RTL" href=https://evgenyorlov.github.io/fa/posts/markdown-syntax/></a>
 </article>
 </main>

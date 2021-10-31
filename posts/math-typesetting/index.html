@@ -3,7 +3,7 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=robots content="index, follow">
-<title>Math Typesetting | PaperMod</title>
+<title>Math Typesetting | Evgeny Orlov</title>
 <meta name=keywords content>
 <meta name=description content="A brief guide to setup KaTeX">
 <meta name=author content="Hugo Authors">
@@ -21,7 +21,6 @@
 <link rel=alternate hreflang=en href=https://evgenyorlov.github.io/posts/math-typesetting/>
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
-<style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
 </noscript><meta property="og:title" content="Math Typesetting">
 <meta property="og:description" content="A brief guide to setup KaTeX">
 <meta property="og:type" content="article">
@@ -33,14 +32,14 @@
 <meta name=twitter:title content="Math Typesetting">
 <meta name=twitter:description content="A brief guide to setup KaTeX">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://evgenyorlov.github.io/posts/"},{"@type":"ListItem","position":2,"name":"Math Typesetting","item":"https://evgenyorlov.github.io/posts/math-typesetting/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Math Typesetting","name":"Math Typesetting","description":"A brief guide to setup KaTeX","keywords":[],"articleBody":"Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.\nIn this example we will be using KaTeX\n Create a partial under /layouts/partials/math.html Within this partial reference the Auto-render Extension or host these scripts locally. Include the partial in your templates (extend_head.html) like so: refer ISSUE #236  {{ if or .Params.math .Site.Params.math }} {{ partial \"math.html\" . }} {{ end }}  To enable KaTex globally set the parameter math to true in a project’s configuration To enable KaTex on a per page basis include the parameter math: true in content files  Note: Use the online reference of Supported TeX Functions\n  Examples  Inline math: \\(\\varphi = \\dfrac{1+\\sqrt5}{2}= 1.6180339887…\\) Block math:\n$$ \\varphi = 1+\\frac{1} {1+\\frac{1} {1+\\frac{1} {1+\\cdots} } } $$\n","wordCount":"124","inLanguage":"en","datePublished":"2019-03-08T00:00:00Z","dateModified":"2019-03-08T00:00:00Z","author":{"@type":"Person","name":"Hugo Authors"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://evgenyorlov.github.io/posts/math-typesetting/"},"publisher":{"@type":"Organization","name":"PaperMod","logo":{"@type":"ImageObject","url":"https://evgenyorlov.github.io/favicon.ico"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Math Typesetting","name":"Math Typesetting","description":"A brief guide to setup KaTeX","keywords":[],"articleBody":"Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.\nIn this example we will be using KaTeX\n Create a partial under /layouts/partials/math.html Within this partial reference the Auto-render Extension or host these scripts locally. Include the partial in your templates (extend_head.html) like so: refer ISSUE #236  {{ if or .Params.math .Site.Params.math }} {{ partial \"math.html\" . }} {{ end }}  To enable KaTex globally set the parameter math to true in a project’s configuration To enable KaTex on a per page basis include the parameter math: true in content files  Note: Use the online reference of Supported TeX Functions\n  Examples  Inline math: \\(\\varphi = \\dfrac{1+\\sqrt5}{2}= 1.6180339887…\\) Block math:\n$$ \\varphi = 1+\\frac{1} {1+\\frac{1} {1+\\frac{1} {1+\\cdots} } } $$\n","wordCount":"124","inLanguage":"en","datePublished":"2019-03-08T00:00:00Z","dateModified":"2019-03-08T00:00:00Z","author":{"@type":"Person","name":"Hugo Authors"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://evgenyorlov.github.io/posts/math-typesetting/"},"publisher":{"@type":"Organization","name":"Evgeny Orlov","logo":{"@type":"ImageObject","url":"https://evgenyorlov.github.io/favicon.ico"}}}</script>
 </head>
-<body id=top>
-<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
+<body class=dark id=top>
+<script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove('dark')</script>
 <header class=header>
 <nav class=nav>
 <div class=logo>
-<a href=https://evgenyorlov.github.io/ accesskey=h title="PaperMod (Alt + H)">PaperMod</a>
+<a href=https://evgenyorlov.github.io/ accesskey=h title="Evgeny Orlov (Alt + H)">Evgeny Orlov</a>
 <span class=logo-switches>
 <button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
 </button>
@@ -87,21 +86,9 @@ Math Typesetting
 <div class=post-description>
 A brief guide to setup KaTeX
 </div>
-<div class=post-meta><span title="2019-03-08 00:00:00 +0000 UTC">March 8, 2019</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Hugo Authors&nbsp;|&nbsp;<a href=https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content/posts/math-typesetting.md rel="noopener noreferrer" target=_blank>Suggest Changes</a>
+<div class=post-meta><span title="2019-03-08 00:00:00 +0000 UTC">March 8, 2019</span>&nbsp;·&nbsp;Hugo Authors
 </div>
-</header> <div class=toc>
-<details>
-<summary accesskey=c title="(Alt + C)">
-<span class=details>Table of Contents</span>
-</summary>
-<div class=inner><ul>
-<li>
-<a href=#examples aria-label=Examples>Examples</a>
-</li>
-</ul>
-</div>
-</details>
-</div>
+</header>
 <div class=post-content><p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.</p>
 <p>In this example we will be using <a href=https://katex.org/>KaTeX</a></p>
 <ul>
@@ -161,7 +148,7 @@ $$</p>
 </article>
 </main>
 <footer class=footer>
-<span>&copy; 2021 <a href=https://evgenyorlov.github.io/>PaperMod</a></span>
+<span>&copy; 2021 <a href=https://evgenyorlov.github.io/>Evgeny Orlov</a></span>
 <span>
 Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &

@@ -3,7 +3,7 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=robots content="index, follow">
-<title>Installation | Update | PaperMod</title>
+<title>Installation | Update | Evgeny Orlov</title>
 <meta name=keywords content="PaperMod">
 <meta name=description content="Read Install and Update instructions here">
 <meta name=author content="Aditya Telange">
@@ -21,7 +21,6 @@
 <link rel=alternate hreflang=en href=https://evgenyorlov.github.io/posts/papermod/papermod-installation/>
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
-<style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
 </noscript><meta property="og:title" content="Installation | Update">
 <meta property="og:description" content="Read Install and Update instructions here">
 <meta property="og:type" content="article">
@@ -33,14 +32,14 @@
 <meta name=twitter:title content="Installation | Update">
 <meta name=twitter:description content="Read Install and Update instructions here">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://evgenyorlov.github.io/posts/"},{"@type":"ListItem","position":2,"name":"PaperMod","item":"https://evgenyorlov.github.io/posts/papermod/"},{"@type":"ListItem","position":3,"name":"Installation | Update","item":"https://evgenyorlov.github.io/posts/papermod/papermod-installation/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Installation | Update","name":"Installation | Update","description":"Read Install and Update instructions here","keywords":["PaperMod"],"articleBody":"Intro  We’ll be using yml/yaml format for all examples down below, I recommend using yml over toml as it is easier to read. You can find any YML to TOML converters if necessary.   Guide Follow Quick Start guide to setup hugo and create a new site.\n Note: Use -f to select yml format\nhugo new site -f yml\n Make sure you install latest version of hugo(=0.82.0).\nAfter you have created a new site, at Step 3 follow the steps:\nMethod 1 Inside the folder of your Hugo site, run:\ngit clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 Note: You may use  --branch v5.0 to end of above command if you want to stick to specific release.\n Updating theme :\ncd themes/PaperMod git pull  Method 2 you can use as submodule with\ngit submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod --depth=1 git submodule update --init --recursive # needed when you reclone your repo (submodules may not get cloned automatically) Note: You may use  --branch v5.0 to end of above command if you want to stick to specific release.\n Updating theme :\ngit submodule update --remote --merge  Method 3 Or you can Download as Zip from Github Page and extract in your themes directory\nDirect Links:\n Master Branch (Latest) v5.0 v4.0 v3.0 v2.0 v1.0  Finally … Add in config.yml:\ntheme: \"PaperMod\"  Quick Links   Papermod - Features   Papermod - FAQs   Papermod - Variables   Papermod - Icons   ChangeLog    Sample config.yml  Example Site Structure is present here: exampleSite\n Use appropriately\nbaseURL: \"https://examplesite.com/\" title: ExampleSite paginate: 5 theme: PaperMod enableRobotsTXT: true buildDrafts: false buildFuture: false buildExpired: false googleAnalytics: UA-123-45 minify: disableXML: true minifyOutput: true params: env: production # to enable google analytics, opengraph, twitter-cards and schema. title: ExampleSite description: \"ExampleSite description\" keywords: [Blog, Portfolio, PaperMod] author: Me # author: [\"Me\", \"You\"] # multiple authors images: [\"\"] DateFormat: \"January 2, 2006\" defaultTheme: auto # dark, light disableThemeToggle: false ShowReadingTime: true ShowShareButtons: true ShowPostNavLinks: true ShowBreadCrumbs: true ShowCodeCopyButtons: false disableSpecial1stPost: false disableScrollToTop: false comments: false hidemeta: false hideSummary: false showtoc: false tocopen: false assets: # disableHLJS: true # to disable highlight.js # disableFingerprinting: true favicon: \"\" favicon16x16: \"\" favicon32x32: \"\" apple_touch_icon: \"\" safari_pinned_tab: \"\" label: text: \"Home\" icon: /apple-touch-icon.png iconHeight: 35 # profile-mode profileMode: enabled: false # needs to be explicitly set title: ExampleSite subtitle: \"This is subtitle\" imageUrl: \"\" imageWidth: 120 imageHeight: 120 imageTitle: my image buttons: - name: Posts url: posts - name: Tags url: tags # home-info mode homeInfoParams: Title: \"Hi there \\U0001F44B\" Content: Welcome to my blog socialIcons: - name: twitter url: \"https://twitter.com/\" - name: stackoverflow url: \"https://stackoverflow.com\" - name: github url: \"https://github.com/\" analytics: google: SiteVerificationTag: \"XYZabc\" bing: SiteVerificationTag: \"XYZabc\" yandex: SiteVerificationTag: \"XYZabc\" cover: hidden: true # hide everywhere but not in structured data hiddenInList: true # hide on list pages and home hiddenInSingle: true # hide on single page editPost: URL: \"https://github.com//content\" Text: \"Suggest Changes\" # edit text appendFilePath: true # to append file path to Edit link # for search # https://fusejs.io/api/options.html fuseOpts: isCaseSensitive: false shouldSort: true location: 0 distance: 1000 threshold: 0.4 minMatchCharLength: 0 keys: [\"title\", \"permalink\", \"summary\", \"content\"] menu: main: - identifier: categories name: categories url: /categories/ weight: 10 - identifier: tags name: tags url: /tags/ weight: 20 - identifier: example name: example.org url: https://example.org weight: 30 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma # pygmentsUseClasses: true # markup: # highlight: # # anchorLineNos: true # codeFences: true # guessSyntax: true # lineNos: true # style: monokai  Sample Page.md --- title: \"My 1st post\" date: 2020-09-15T11:30:03+00:00 # weight: 1 # aliases: [\"/first\"] tags: [\"first\"] author: \"Me\" # author: [\"Me\", \"You\"] # multiple authors showToc: true TocOpen: false draft: false hidemeta: false comments: false description: \"Desc Text.\" canonicalURL: \"https://canonical.url/to/page\" disableHLJS: true # to disable highlightjs disableShare: false disableHLJS: false hideSummary: false searchHidden: true ShowReadingTime: true ShowBreadCrumbs: true ShowPostNavLinks: true cover: image: \"\" # image path/url alt: \"\" # alt text caption: \"\" # display caption under cover relative: false # when using page bundles set this to true hidden: true # only hide on current single page editPost: URL: \"https://github.com//content\" Text: \"Suggest Changes\" # edit text appendFilePath: true # to append file path to Edit link --- You can use it by creating archetypes/post.md\nhugo new --kind post   ","wordCount":"716","inLanguage":"en","datePublished":"2021-01-20T00:00:00Z","dateModified":"2021-01-20T00:00:00Z","author":{"@type":"Person","name":"Aditya Telange"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://evgenyorlov.github.io/posts/papermod/papermod-installation/"},"publisher":{"@type":"Organization","name":"PaperMod","logo":{"@type":"ImageObject","url":"https://evgenyorlov.github.io/favicon.ico"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Installation | Update","name":"Installation | Update","description":"Read Install and Update instructions here","keywords":["PaperMod"],"articleBody":"Intro  We’ll be using yml/yaml format for all examples down below, I recommend using yml over toml as it is easier to read. You can find any YML to TOML converters if necessary.   Guide Follow Quick Start guide to setup hugo and create a new site.\n Note: Use -f to select yml format\nhugo new site -f yml\n Make sure you install latest version of hugo(=0.82.0).\nAfter you have created a new site, at Step 3 follow the steps:\nMethod 1 Inside the folder of your Hugo site, run:\ngit clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 Note: You may use  --branch v5.0 to end of above command if you want to stick to specific release.\n Updating theme :\ncd themes/PaperMod git pull  Method 2 you can use as submodule with\ngit submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod --depth=1 git submodule update --init --recursive # needed when you reclone your repo (submodules may not get cloned automatically) Note: You may use  --branch v5.0 to end of above command if you want to stick to specific release.\n Updating theme :\ngit submodule update --remote --merge  Method 3 Or you can Download as Zip from Github Page and extract in your themes directory\nDirect Links:\n Master Branch (Latest) v5.0 v4.0 v3.0 v2.0 v1.0  Finally … Add in config.yml:\ntheme: \"PaperMod\"  Quick Links   Papermod - Features   Papermod - FAQs   Papermod - Variables   Papermod - Icons   ChangeLog    Sample config.yml  Example Site Structure is present here: exampleSite\n Use appropriately\nbaseURL: \"https://examplesite.com/\" title: ExampleSite paginate: 5 theme: PaperMod enableRobotsTXT: true buildDrafts: false buildFuture: false buildExpired: false googleAnalytics: UA-123-45 minify: disableXML: true minifyOutput: true params: env: production # to enable google analytics, opengraph, twitter-cards and schema. title: ExampleSite description: \"ExampleSite description\" keywords: [Blog, Portfolio, PaperMod] author: Me # author: [\"Me\", \"You\"] # multiple authors images: [\"\"] DateFormat: \"January 2, 2006\" defaultTheme: auto # dark, light disableThemeToggle: false ShowReadingTime: true ShowShareButtons: true ShowPostNavLinks: true ShowBreadCrumbs: true ShowCodeCopyButtons: false disableSpecial1stPost: false disableScrollToTop: false comments: false hidemeta: false hideSummary: false showtoc: false tocopen: false assets: # disableHLJS: true # to disable highlight.js # disableFingerprinting: true favicon: \"\" favicon16x16: \"\" favicon32x32: \"\" apple_touch_icon: \"\" safari_pinned_tab: \"\" label: text: \"Home\" icon: /apple-touch-icon.png iconHeight: 35 # profile-mode profileMode: enabled: false # needs to be explicitly set title: ExampleSite subtitle: \"This is subtitle\" imageUrl: \"\" imageWidth: 120 imageHeight: 120 imageTitle: my image buttons: - name: Posts url: posts - name: Tags url: tags # home-info mode homeInfoParams: Title: \"Hi there \\U0001F44B\" Content: Welcome to my blog socialIcons: - name: twitter url: \"https://twitter.com/\" - name: stackoverflow url: \"https://stackoverflow.com\" - name: github url: \"https://github.com/\" analytics: google: SiteVerificationTag: \"XYZabc\" bing: SiteVerificationTag: \"XYZabc\" yandex: SiteVerificationTag: \"XYZabc\" cover: hidden: true # hide everywhere but not in structured data hiddenInList: true # hide on list pages and home hiddenInSingle: true # hide on single page editPost: URL: \"https://github.com//content\" Text: \"Suggest Changes\" # edit text appendFilePath: true # to append file path to Edit link # for search # https://fusejs.io/api/options.html fuseOpts: isCaseSensitive: false shouldSort: true location: 0 distance: 1000 threshold: 0.4 minMatchCharLength: 0 keys: [\"title\", \"permalink\", \"summary\", \"content\"] menu: main: - identifier: categories name: categories url: /categories/ weight: 10 - identifier: tags name: tags url: /tags/ weight: 20 - identifier: example name: example.org url: https://example.org weight: 30 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma # pygmentsUseClasses: true # markup: # highlight: # # anchorLineNos: true # codeFences: true # guessSyntax: true # lineNos: true # style: monokai  Sample Page.md --- title: \"My 1st post\" date: 2020-09-15T11:30:03+00:00 # weight: 1 # aliases: [\"/first\"] tags: [\"first\"] author: \"Me\" # author: [\"Me\", \"You\"] # multiple authors showToc: true TocOpen: false draft: false hidemeta: false comments: false description: \"Desc Text.\" canonicalURL: \"https://canonical.url/to/page\" disableHLJS: true # to disable highlightjs disableShare: false disableHLJS: false hideSummary: false searchHidden: true ShowReadingTime: true ShowBreadCrumbs: true ShowPostNavLinks: true cover: image: \"\" # image path/url alt: \"\" # alt text caption: \"\" # display caption under cover relative: false # when using page bundles set this to true hidden: true # only hide on current single page editPost: URL: \"https://github.com//content\" Text: \"Suggest Changes\" # edit text appendFilePath: true # to append file path to Edit link --- You can use it by creating archetypes/post.md\nhugo new --kind post   ","wordCount":"716","inLanguage":"en","datePublished":"2021-01-20T00:00:00Z","dateModified":"2021-01-20T00:00:00Z","author":{"@type":"Person","name":"Aditya Telange"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://evgenyorlov.github.io/posts/papermod/papermod-installation/"},"publisher":{"@type":"Organization","name":"Evgeny Orlov","logo":{"@type":"ImageObject","url":"https://evgenyorlov.github.io/favicon.ico"}}}</script>
 </head>
-<body id=top>
-<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
+<body class=dark id=top>
+<script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove('dark')</script>
 <header class=header>
 <nav class=nav>
 <div class=logo>
-<a href=https://evgenyorlov.github.io/ accesskey=h title="PaperMod (Alt + H)">PaperMod</a>
+<a href=https://evgenyorlov.github.io/ accesskey=h title="Evgeny Orlov (Alt + H)">Evgeny Orlov</a>
 <span class=logo-switches>
 <button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
 </button>
@@ -81,53 +80,12 @@
 <main class=main>
 <article class=post-single>
 <header class=post-header>
-<div class=breadcrumbs><a href=https://evgenyorlov.github.io/>Home</a>&nbsp;»&nbsp;<a href=https://evgenyorlov.github.io/posts/>Posts</a>&nbsp;»&nbsp;<a href=https://evgenyorlov.github.io/posts/papermod/>PaperMod</a></div>
 <h1 class=post-title>
 Installation | Update
 </h1>
-<div class=post-meta><span title="2021-01-20 00:00:00 +0000 UTC">January 20, 2021</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Aditya Telange&nbsp;|&nbsp;<a href=https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content/posts/papermod/papermod-installation.md rel="noopener noreferrer" target=_blank>Suggest Changes</a>
+<div class=post-meta><span title="2021-01-20 00:00:00 +0000 UTC">January 20, 2021</span>&nbsp;·&nbsp;Aditya Telange
 </div>
-</header> <div class=toc>
-<details>
-<summary accesskey=c title="(Alt + C)">
-<span class=details>Table of Contents</span>
-</summary>
-<div class=inner><ul>
-<li>
-<a href=#intro aria-label=Intro>Intro</a></li>
-<li>
-<a href=#guide aria-label=Guide>Guide</a><ul>
-<li>
-<a href=#method-1 aria-label="Method 1">Method 1</a></li>
-<li>
-<a href=#method-2 aria-label="Method 2">Method 2</a></li>
-<li>
-<a href=#method-3 aria-label="Method 3">Method 3</a></li>
-<li>
-<a href=#finally- aria-label="Finally &amp;hellip;">Finally &mldr;</a></li></ul>
-</li>
-<li>
-<a href=#quick-links aria-label="Quick Links">Quick Links</a><ul>
-<li>
-<a href=#papermod---featurespapermod-features aria-label="Papermod - Features"><a href=../papermod-features>Papermod - Features</a></a></li>
-<li>
-<a href=#papermod---faqspapermod-how-to aria-label="Papermod - FAQs"><a href=../papermod-how-to>Papermod - FAQs</a></a></li>
-<li>
-<a href=#papermod---variablespapermod-variables aria-label="Papermod - Variables"><a href=../papermod-variables>Papermod - Variables</a></a></li>
-<li>
-<a href=#papermod---iconspapermod-icons aria-label="Papermod - Icons"><a href=../papermod-icons>Papermod - Icons</a></a></li>
-<li>
-<a href=#changeloghttpsgithubcomadityatelangehugo-papermodreleases aria-label=ChangeLog><a href=https://github.com/adityatelange/hugo-PaperMod/releases>ChangeLog</a></a></li></ul>
-</li>
-<li>
-<a href=#sample-configyml aria-label="Sample config.yml">Sample <code>config.yml</code></a></li>
-<li>
-<a href=#sample-pagemd aria-label="Sample Page.md">Sample <code>Page.md</code></a>
-</li>
-</ul>
-</div>
-</details>
-</div>
+</header>
 <div class=post-content><h2 id=intro>Intro<a hidden class=anchor aria-hidden=true href=#intro>#</a></h2>
 <ul>
 <li><strong>We&rsquo;ll be using <code>yml/yaml</code> format for all examples down below, I recommend using <code>yml</code> over <code>toml</code> as it is easier to read.</strong></li>
@@ -402,7 +360,7 @@ git submodule update --init --recursive <span style=color:#75715e># needed when 
 </article>
 </main>
 <footer class=footer>
-<span>&copy; 2021 <a href=https://evgenyorlov.github.io/>PaperMod</a></span>
+<span>&copy; 2021 <a href=https://evgenyorlov.github.io/>Evgeny Orlov</a></span>
 <span>
 Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &

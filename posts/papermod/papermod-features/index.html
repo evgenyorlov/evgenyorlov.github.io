@@ -3,7 +3,7 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=robots content="index, follow">
-<title>Features | PaperMod</title>
+<title>Features | Evgeny Orlov</title>
 <meta name=keywords content="PaperMod">
 <meta name=description content="Learn About All Features in PaperMod">
 <meta name=author content="Aditya Telange">
@@ -21,7 +21,6 @@
 <link rel=alternate hreflang=en href=https://evgenyorlov.github.io/posts/papermod/papermod-features/>
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
-<style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
 </noscript><meta property="og:title" content="Features">
 <meta property="og:description" content="Learn About All Features in PaperMod">
 <meta property="og:type" content="article">
@@ -33,14 +32,14 @@
 <meta name=twitter:title content="Features">
 <meta name=twitter:description content="Learn About All Features in PaperMod">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://evgenyorlov.github.io/posts/"},{"@type":"ListItem","position":2,"name":"PaperMod","item":"https://evgenyorlov.github.io/posts/papermod/"},{"@type":"ListItem","position":3,"name":"Features","item":"https://evgenyorlov.github.io/posts/papermod/papermod-features/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Features","name":"Features","description":"Learn About All Features in PaperMod","keywords":["PaperMod"],"articleBody":"Intro   We’ll be using yml/yaml format for all examples down below, I recommend using yml over toml as it is easier to read.\n  You can find any YML to TOML converters if necessary.\n   Assets (js/css) The following is enabled by default\n minification - makes the assets size smallest as possible. bundling - bundles all the styles in one single asset fingerprint/integrity check.   Default Theme light/dark/auto params: # defaultTheme: light # defaultTheme: dark defaultTheme: auto # to switch between dark or light according to browser theme   Theme Switch Toggle (enabled by default) Shows icon besides title of page to change theme\nTo disable it :\ndisableThemeToggle: true You can refer following table for better understanding…\n   defaultTheme disableThemeToggle checks local storage? checks system theme? Info     auto true No Yes only system theme    false Yes (if not-2) Yes (2) switch present   dark true No No force dark only    false Yes No switch present   light true No No force light only    false Yes No switch present     Archives Layout Create a page with archive.md in content directory with following content\n. ├── config.yml ├── content/ │ ├── archives.md and add the following to it\n--- title: \"Archive\" layout: \"archives\" url: \"/archives/\" summary: archives --- Note: Archives Layout does not support Multilingual Month Translations.\nex: archives.md\n Regular Mode (default-mode)  Home-Info Mode Use 1st entry as some Information\nadd following to config file\nparams: homeInfoParams: Title: Hi there wave Content: Can be Info, links, about... socialIcons: # optional - name: \"\" url: \"\" - name: \"\" url: \"\" ex. config.yml#L106\n Profile Mode Shows Index/Home page as Full Page with Social Links and Image\nadd following to config file\nparams: profileMode: enabled: true title: \"\" # optional default will be site title subtitle: \"This is subtitle\" imageUrl: \"\" # optional imageTitle: \"\" # optional imageWidth: 120 # custom size imageHeight: 120 # custom size buttons: - name: Archive url: \"/archive\" - name: Github url: \"https://github.com/\" socialIcons: # optional - name: \"\" url: \"\" - name: \"\" url: \"\"  Search Page PaperMod uses Fuse.js Basic for seach functionality\nAdd the following to site config, config.yml\noutputs: home: - HTML - RSS - JSON # is necessary Create a page with search.md in content directory with following content\n--- title: \"Search\" # in any language you want layout: \"search\" # is necessary # url: \"/archive\" # description: \"Description for Search\" summary: \"search\" --- To hide a particular page from being searched, add it in post’s fron’t matter\n--- searchHidden: true ex: search.md\n Search Page also has Key bindings:\n Arrow keys to move up/down the list Enter key (return) or Right Arrow key to Go to highlighted page Escape key to clear searchbox and results   For Multilingual use search..md ex. search.es.md.\nNote: Search will work only on current language, user is currently on !\nCustomizing Fusejs Options\nRefer https://fusejs.io/api/options.html for Options, Add those as shown below.\nparams: fuseOpts: isCaseSensitive: false shouldSort: true location: 0 distance: 1000 threshold: 0.4 minMatchCharLength: 0 keys: [\"title\", \"permalink\", \"summary\", \"content\"]  Draft Page indication adds [draft] mark to indicate draft pages.\n Post Cover Image In post’s page-variables add :\ncover: image: \"\" # can also paste direct link from external site # ex. https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png alt: \"\" caption: \"\" relative: false # To use relative path for cover image, used in hugo Page-bundles When you include images in the Page Bundle, multiple sizes of the image will automatically be provided using the HTML5 srcset field.\nTo reduce generation time and size of the site, you can disable this feature using\nparams: cover: responsiveImages: false To enable hyperlinks to the full image size on post pages, use\nparams: cover: linkFullImages: true  Share Buttons on post Displays Share Buttons at Bottom of each post\nto show share buttons add\nparams: ShowShareButtons: true  Show post reading time Displays Reading Time (the estimated time, in minutes, it takes to read the content.)\nTo show reading time add\nParams: ShowReadingTime: true  Show Table of Contents (Toc) on blog post Displays ToC on blog-pages\nTo show ToC add following to page-variables\nShowToc: true To keep Toc Open by default on a post add following to page-variables:\nTocOpen: true  BreadCrumb Navigation Adds BreadCrumb Navigation above Post’s Title to show subsections and Navigation to Home\nparams: ShowBreadCrumbs: true Can be diabled for particular page’s front-matter\n--- ShowBreadCrumbs: false ---  Edit Link for Posts Add a button to suggest changes by using the file path of the post to link to a edit destination.\nFor site config use:\nParams: editPost: URL: \"https://github.com//content\" Text: \"Suggest Changes\" # edit text appendFilePath: true # to append file path to Edit link Can be modified for individual pages\n--- editPost: URL: \"https://github.com//content\" Text: \"Suggest Changes\" # edit text appendFilePath: true # to append file path to Edit link --- The example above would yield the following link for the post file posts/post-name.md: https://github.com//content/posts/post-name.md\n   Parameter Required Default Value     editPost.URL true -   editPost.appendFilePath false false   editPost.Text false “Edit”    Since the link generated is a regular HTML anchor tag , you can also use other URL schemas like mailto://, e.g. URL: \"mailto://mail@example.com?subject=Suggesting changes for \"\n Other Posts suggestion below a post Adds a Previous / Next post suggestion under a single post\nparams: ShowPostNavLinks: true  Multiple Authors To Use multiple authors for a post, in post-variables:\n--- author: [\"Me\", \"You\"] --- To use Multiple Authors Site-wide, in config.yml:\nparams: author: [\"Me\", \"You\"]  Comments to add comments, create a html file\nlayouts/partials/comments.html\nand paste code provided by your comments provider\nalso in config add this\nparams: comments: true read more about this hugo-comments\n AccessKeys c - ToC Open/Close g - Go To Top h - Home (according to current lang) t - Theme toggle / - Jumps to search page if in menu What’s AccessKeys ?\n Enhanced SEO Enabled only when env: production\n Rich Results/Snippets Support  Twitter Cards Support  The Twitter Cards metadata, except twitter:image should not require additional configuration, since it is generated from metadata that you should already have (for instance the page title and description). The twitter:image uses the Post Cover Image, if present. In the absence of a cover images, the first image from the images frontmatter (a list) is used. images: - image_01.png - image_02.png  Finally, if neither of those are provided, twitter:image comes from the first Page Bundle image with feature in the name, with a fallback to the first image with cover or thumbnail in the name.  OpenGraph support  The OpenGraph metadata, except og:image should not require additional configuration, since it is generated from metadata that you should already have (for instance the page title and description). The og:image uses the Post Cover Image, if present. In the absence of a cover images, the first image from the images frontmatter (a list) is used. images: - image_01.png - image_02.png  Finally, if neither of those are provided, og:image comes from the first Page Bundle image with feature in the name, with a fallback to the first image with cover or thumbnail in the name. For pages, you can also add audio (using frontmatter audio: filename.ext) and/or videos. videos: - filename01.mov - filename02.avi    Multilingual Support  Misc Scroll-Bar themed (by default) Smooth Scroll between in-page links (by default) Scroll-to-Top Button (by default) Displays a Scroll-to-Top button in right-bottom corner Google Analytics integration Syntax highlighting RSS feeds ","wordCount":"1228","inLanguage":"en","datePublished":"2021-01-20T00:00:00Z","dateModified":"2021-01-20T00:00:00Z","author":{"@type":"Person","name":"Aditya Telange"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://evgenyorlov.github.io/posts/papermod/papermod-features/"},"publisher":{"@type":"Organization","name":"PaperMod","logo":{"@type":"ImageObject","url":"https://evgenyorlov.github.io/favicon.ico"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Features","name":"Features","description":"Learn About All Features in PaperMod","keywords":["PaperMod"],"articleBody":"Intro   We’ll be using yml/yaml format for all examples down below, I recommend using yml over toml as it is easier to read.\n  You can find any YML to TOML converters if necessary.\n   Assets (js/css) The following is enabled by default\n minification - makes the assets size smallest as possible. bundling - bundles all the styles in one single asset fingerprint/integrity check.   Default Theme light/dark/auto params: # defaultTheme: light # defaultTheme: dark defaultTheme: auto # to switch between dark or light according to browser theme   Theme Switch Toggle (enabled by default) Shows icon besides title of page to change theme\nTo disable it :\ndisableThemeToggle: true You can refer following table for better understanding…\n   defaultTheme disableThemeToggle checks local storage? checks system theme? Info     auto true No Yes only system theme    false Yes (if not-2) Yes (2) switch present   dark true No No force dark only    false Yes No switch present   light true No No force light only    false Yes No switch present     Archives Layout Create a page with archive.md in content directory with following content\n. ├── config.yml ├── content/ │ ├── archives.md and add the following to it\n--- title: \"Archive\" layout: \"archives\" url: \"/archives/\" summary: archives --- Note: Archives Layout does not support Multilingual Month Translations.\nex: archives.md\n Regular Mode (default-mode)  Home-Info Mode Use 1st entry as some Information\nadd following to config file\nparams: homeInfoParams: Title: Hi there wave Content: Can be Info, links, about... socialIcons: # optional - name: \"\" url: \"\" - name: \"\" url: \"\" ex. config.yml#L106\n Profile Mode Shows Index/Home page as Full Page with Social Links and Image\nadd following to config file\nparams: profileMode: enabled: true title: \"\" # optional default will be site title subtitle: \"This is subtitle\" imageUrl: \"\" # optional imageTitle: \"\" # optional imageWidth: 120 # custom size imageHeight: 120 # custom size buttons: - name: Archive url: \"/archive\" - name: Github url: \"https://github.com/\" socialIcons: # optional - name: \"\" url: \"\" - name: \"\" url: \"\"  Search Page PaperMod uses Fuse.js Basic for seach functionality\nAdd the following to site config, config.yml\noutputs: home: - HTML - RSS - JSON # is necessary Create a page with search.md in content directory with following content\n--- title: \"Search\" # in any language you want layout: \"search\" # is necessary # url: \"/archive\" # description: \"Description for Search\" summary: \"search\" --- To hide a particular page from being searched, add it in post’s fron’t matter\n--- searchHidden: true ex: search.md\n Search Page also has Key bindings:\n Arrow keys to move up/down the list Enter key (return) or Right Arrow key to Go to highlighted page Escape key to clear searchbox and results   For Multilingual use search..md ex. search.es.md.\nNote: Search will work only on current language, user is currently on !\nCustomizing Fusejs Options\nRefer https://fusejs.io/api/options.html for Options, Add those as shown below.\nparams: fuseOpts: isCaseSensitive: false shouldSort: true location: 0 distance: 1000 threshold: 0.4 minMatchCharLength: 0 keys: [\"title\", \"permalink\", \"summary\", \"content\"]  Draft Page indication adds [draft] mark to indicate draft pages.\n Post Cover Image In post’s page-variables add :\ncover: image: \"\" # can also paste direct link from external site # ex. https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png alt: \"\" caption: \"\" relative: false # To use relative path for cover image, used in hugo Page-bundles When you include images in the Page Bundle, multiple sizes of the image will automatically be provided using the HTML5 srcset field.\nTo reduce generation time and size of the site, you can disable this feature using\nparams: cover: responsiveImages: false To enable hyperlinks to the full image size on post pages, use\nparams: cover: linkFullImages: true  Share Buttons on post Displays Share Buttons at Bottom of each post\nto show share buttons add\nparams: ShowShareButtons: true  Show post reading time Displays Reading Time (the estimated time, in minutes, it takes to read the content.)\nTo show reading time add\nParams: ShowReadingTime: true  Show Table of Contents (Toc) on blog post Displays ToC on blog-pages\nTo show ToC add following to page-variables\nShowToc: true To keep Toc Open by default on a post add following to page-variables:\nTocOpen: true  BreadCrumb Navigation Adds BreadCrumb Navigation above Post’s Title to show subsections and Navigation to Home\nparams: ShowBreadCrumbs: true Can be diabled for particular page’s front-matter\n--- ShowBreadCrumbs: false ---  Edit Link for Posts Add a button to suggest changes by using the file path of the post to link to a edit destination.\nFor site config use:\nParams: editPost: URL: \"https://github.com//content\" Text: \"Suggest Changes\" # edit text appendFilePath: true # to append file path to Edit link Can be modified for individual pages\n--- editPost: URL: \"https://github.com//content\" Text: \"Suggest Changes\" # edit text appendFilePath: true # to append file path to Edit link --- The example above would yield the following link for the post file posts/post-name.md: https://github.com//content/posts/post-name.md\n   Parameter Required Default Value     editPost.URL true -   editPost.appendFilePath false false   editPost.Text false “Edit”    Since the link generated is a regular HTML anchor tag , you can also use other URL schemas like mailto://, e.g. URL: \"mailto://mail@example.com?subject=Suggesting changes for \"\n Other Posts suggestion below a post Adds a Previous / Next post suggestion under a single post\nparams: ShowPostNavLinks: true  Multiple Authors To Use multiple authors for a post, in post-variables:\n--- author: [\"Me\", \"You\"] --- To use Multiple Authors Site-wide, in config.yml:\nparams: author: [\"Me\", \"You\"]  Comments to add comments, create a html file\nlayouts/partials/comments.html\nand paste code provided by your comments provider\nalso in config add this\nparams: comments: true read more about this hugo-comments\n AccessKeys c - ToC Open/Close g - Go To Top h - Home (according to current lang) t - Theme toggle / - Jumps to search page if in menu What’s AccessKeys ?\n Enhanced SEO Enabled only when env: production\n Rich Results/Snippets Support  Twitter Cards Support  The Twitter Cards metadata, except twitter:image should not require additional configuration, since it is generated from metadata that you should already have (for instance the page title and description). The twitter:image uses the Post Cover Image, if present. In the absence of a cover images, the first image from the images frontmatter (a list) is used. images: - image_01.png - image_02.png  Finally, if neither of those are provided, twitter:image comes from the first Page Bundle image with feature in the name, with a fallback to the first image with cover or thumbnail in the name.  OpenGraph support  The OpenGraph metadata, except og:image should not require additional configuration, since it is generated from metadata that you should already have (for instance the page title and description). The og:image uses the Post Cover Image, if present. In the absence of a cover images, the first image from the images frontmatter (a list) is used. images: - image_01.png - image_02.png  Finally, if neither of those are provided, og:image comes from the first Page Bundle image with feature in the name, with a fallback to the first image with cover or thumbnail in the name. For pages, you can also add audio (using frontmatter audio: filename.ext) and/or videos. videos: - filename01.mov - filename02.avi    Multilingual Support  Misc Scroll-Bar themed (by default) Smooth Scroll between in-page links (by default) Scroll-to-Top Button (by default) Displays a Scroll-to-Top button in right-bottom corner Google Analytics integration Syntax highlighting RSS feeds ","wordCount":"1228","inLanguage":"en","datePublished":"2021-01-20T00:00:00Z","dateModified":"2021-01-20T00:00:00Z","author":{"@type":"Person","name":"Aditya Telange"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://evgenyorlov.github.io/posts/papermod/papermod-features/"},"publisher":{"@type":"Organization","name":"Evgeny Orlov","logo":{"@type":"ImageObject","url":"https://evgenyorlov.github.io/favicon.ico"}}}</script>
 </head>
-<body id=top>
-<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
+<body class=dark id=top>
+<script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove('dark')</script>
 <header class=header>
 <nav class=nav>
 <div class=logo>
-<a href=https://evgenyorlov.github.io/ accesskey=h title="PaperMod (Alt + H)">PaperMod</a>
+<a href=https://evgenyorlov.github.io/ accesskey=h title="Evgeny Orlov (Alt + H)">Evgeny Orlov</a>
 <span class=logo-switches>
 <button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
 </button>
@@ -81,88 +80,12 @@
 <main class=main>
 <article class=post-single>
 <header class=post-header>
-<div class=breadcrumbs><a href=https://evgenyorlov.github.io/>Home</a>&nbsp;»&nbsp;<a href=https://evgenyorlov.github.io/posts/>Posts</a>&nbsp;»&nbsp;<a href=https://evgenyorlov.github.io/posts/papermod/>PaperMod</a></div>
 <h1 class=post-title>
 Features
 </h1>
-<div class=post-meta><span title="2021-01-20 00:00:00 +0000 UTC">January 20, 2021</span>&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Aditya Telange&nbsp;|&nbsp;<a href=https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content/posts/papermod/papermod-features/index.md rel="noopener noreferrer" target=_blank>Suggest Changes</a>
+<div class=post-meta><span title="2021-01-20 00:00:00 +0000 UTC">January 20, 2021</span>&nbsp;·&nbsp;Aditya Telange
 </div>
-</header> <div class=toc>
-<details>
-<summary accesskey=c title="(Alt + C)">
-<span class=details>Table of Contents</span>
-</summary>
-<div class=inner><ul>
-<li>
-<a href=#intro aria-label=Intro>Intro</a></li>
-<li>
-<a href=#assets-jscss aria-label="Assets (js/css)">Assets (js/css)</a></li>
-<li>
-<a href=#default-theme-lightdarkauto aria-label="Default Theme light/dark/auto">Default Theme light/dark/auto</a></li>
-<li>
-<a href=#theme-switch-toggle-enabled-by-default aria-label="Theme Switch Toggle (enabled by default)">Theme Switch Toggle (enabled by default)</a></li>
-<li>
-<a href=#archives-layout aria-label="Archives Layout">Archives Layout</a></li>
-<li>
-<a href=#regular-mode-default-mode aria-label="Regular Mode (default-mode)">Regular Mode (default-mode)</a></li>
-<li>
-<a href=#home-info-mode aria-label="Home-Info Mode">Home-Info Mode</a></li>
-<li>
-<a href=#profile-mode aria-label="Profile Mode">Profile Mode</a></li>
-<li>
-<a href=#search-page aria-label="Search Page">Search Page</a></li>
-<li>
-<a href=#draft-page-indication aria-label="Draft Page indication">Draft Page indication</a></li>
-<li>
-<a href=#post-cover-image aria-label="Post Cover Image">Post Cover Image</a></li>
-<li>
-<a href=#share-buttons-on-post aria-label="Share Buttons on post">Share Buttons on post</a></li>
-<li>
-<a href=#show-post-reading-time aria-label="Show post reading time">Show post reading time</a></li>
-<li>
-<a href=#show-table-of-contents-toc-on-blog-post aria-label="Show Table of Contents (Toc) on blog post">Show Table of Contents (Toc) on blog post</a></li>
-<li>
-<a href=#breadcrumb-navigation aria-label="BreadCrumb Navigation">BreadCrumb Navigation</a></li>
-<li>
-<a href=#edit-link-for-posts aria-label="Edit Link for Posts">Edit Link for Posts</a></li>
-<li>
-<a href=#other-posts-suggestion-below-a-post aria-label="Other Posts suggestion below a post">Other Posts suggestion below a post</a></li>
-<li>
-<a href=#multiple-authors aria-label="Multiple Authors">Multiple Authors</a></li>
-<li>
-<a href=#comments aria-label=Comments>Comments</a></li>
-<li>
-<a href=#accesskeys aria-label=AccessKeys>AccessKeys</a></li>
-<li>
-<a href=#enhanced-seo aria-label="Enhanced SEO">Enhanced SEO</a><ul>
-<li>
-<a href=#twitter-cards-support aria-label="Twitter Cards Support">Twitter Cards Support</a></li>
-<li>
-<a href=#opengraph-support aria-label="OpenGraph support">OpenGraph support</a></li></ul>
-</li>
-<li>
-<a href=#multilingual-support aria-label="Multilingual Support">Multilingual Support</a></li>
-<li>
-<a href=#misc aria-label=Misc>Misc</a><ul>
-<li>
-<a href=#scroll-bar-themed-by-default aria-label="Scroll-Bar themed (by default)">Scroll-Bar themed (by default)</a></li>
-<li>
-<a href=#smooth-scroll-between-in-page-links-by-default aria-label="Smooth Scroll between in-page links (by default)">Smooth Scroll between in-page links (by default)</a></li>
-<li>
-<a href=#scroll-to-top-button-by-default aria-label="Scroll-to-Top Button (by default)">Scroll-to-Top Button (by default)</a></li>
-<li>
-<a href=#google-analytics-integration aria-label="Google Analytics integration">Google Analytics integration</a></li>
-<li>
-<a href=#syntax-highlighting aria-label="Syntax highlighting">Syntax highlighting</a></li>
-<li>
-<a href=#rss-feeds aria-label="RSS feeds">RSS feeds</a>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-</details>
-</div>
+</header>
 <div class=post-content><h3 id=intro>Intro<a hidden class=anchor aria-hidden=true href=#intro>#</a></h3>
 <ul>
 <li>
@@ -582,7 +505,7 @@ videos.
 </article>
 </main>
 <footer class=footer>
-<span>&copy; 2021 <a href=https://evgenyorlov.github.io/>PaperMod</a></span>
+<span>&copy; 2021 <a href=https://evgenyorlov.github.io/>Evgeny Orlov</a></span>
 <span>
 Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
