@@ -1,5 +1,5 @@
 baseURL: "https://evgenyorlov.github.io/"
-title: PaperMod
+title: Evgeny Orlov
 paginate: 5
 theme: hugo-PaperMod
 
@@ -98,24 +98,25 @@ params:
     author: Theme PaperMod
     # author: ["Me", "You"] # multiple authors
 
-    defaultTheme: auto
+    defaultTheme: dark
     # disableThemeToggle: true
     ShowShareButtons: true
-    ShowReadingTime: true
+    ShowReadingTime: false
     # disableSpecial1stPost: true
     displayFullLangName: true
     ShowPostNavLinks: true
-    ShowBreadCrumbs: true
+    ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
-    ShowToc: true
+    ShowToc: false
     # comments: false
     images: ["papermod-cover.png"]
 
     profileMode:
-        enabled: false
-        title: PaperMod
-        imageUrl: "#"
-        imageTitle: my image
+        enabled: true
+        title: Hi there wave
+        subtitle: "This is my personal blog"
+        # imageUrl: "#"
+        # imageTitle: my image
         # imageWidth: 120
         # imageHeight: 120
         buttons:
@@ -137,16 +138,13 @@ params:
 
     socialIcons:
         - name: github
-          url: "https://github.com/adityatelange/hugo-PaperMod"
-        - name: KoFi
-          url: "https://ko-fi.com/adityatelange"
-        - name: RsS
+          url: "https://github.com/evgenyorlov"
+        - name: telegram
+          url: "https://t.me/eugeneorlov"
+        - name: email
+          url: "mailto:eugene.a.orlov@gmail.com"
+        - name: rss
           url: "index.xml"
-
-    editPost:
-        URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
-        Text: "Suggest Changes" # edit text
-        appendFilePath: true # to append file path to Edit link
 
     # label:
     #     text: "Home"
@@ -197,7 +195,7 @@ markup:
 
 privacy:
     vimeo:
-        disabled: false
+        disabled: true
         simple: true
 
     twitter:
@@ -206,7 +204,7 @@ privacy:
         simple: true
 
     instagram:
-        disabled: false
+        disabled: true
         simple: true
 
     youtube:
