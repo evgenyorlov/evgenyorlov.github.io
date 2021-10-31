@@ -1,7 +1,28 @@
 baseURL: "https://evgenyorlov.github.io/"
 title: Evgeny Orlov
-paginate: 5
+paginate: 10
 theme: hugo-PaperMod
+menu:
+  main:
+    - name: About
+      url: about
+      weight: 5
+    - name: CV
+      url: cv
+      weight: 5
+    - name: Archive
+      url: archives/
+      weight: 10
+    - name: Search
+      url: search/
+      weight: 20
+    - name: Tags
+      url: tags/
+      weight: 20
+    - name: Categories
+      url: categories/
+      weight: 20
+
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -9,6 +30,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 enableEmoji: true
+# timeout: 30000
 # googleAnalytics: UA-123-45
 
 minify:
@@ -42,24 +64,28 @@ params:
 
     profileMode:
         enabled: true
-        title: "Hi there \U0001F44B"
+        title: "Hi, There \U0001F44B!"
         # imageUrl: "#"
         # imageTitle: my image
         # imageWidth: 120
         # imageHeight: 120
         buttons:
+            - name: About me
+              url: about
+            - name: CV
+              url: cv
             - name: Blog
-              url: posts
+              url: blog
 
     socialIcons:
-        - name: github
-          url: "https://github.com/evgenyorlov"
-        - name: telegram
-          url: "https://t.me/eugeneorlov"
         - name: email
           url: "mailto:eugene.a.orlov@gmail.com"
-        - name: rss
-          url: "index.xml"
+        - name: telegram
+          url: "https://t.me/eugeneorlov"
+        - name: github
+          url: "https://github.com/evgenyorlov"
+        - name: linkedin
+          url: "https://linkein.com"
 
     # label:
     #     text: "Home"
@@ -94,7 +120,6 @@ params:
 taxonomies:
     category: categories
     tag: tags
-    series: series
 
 markup:
     goldmark:
