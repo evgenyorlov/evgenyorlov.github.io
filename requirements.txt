@@ -1,5 +1,0 @@
-bs4 # pelican-bootstrapify
-ghp-import
-Markdown
-pelican
-# ghp-import
