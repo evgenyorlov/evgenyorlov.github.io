@@ -13,15 +13,15 @@ menu:
     - name: Archive
       url: archives/
       weight: 10
-    - name: Search
-      url: search/
-      weight: 20
+    - name: Categories
+      url: categories/
+      weight: 15
     - name: Tags
       url: tags/
       weight: 20
-    - name: Categories
-      url: categories/
-      weight: 20
+    - name: Search
+      url: search/
+      weight: 25
 
 
 enableInlineShortcodes: true
@@ -51,7 +51,7 @@ params:
 
     defaultTheme: dark
     # disableThemeToggle: true
-    ShowShareButtons: true
+    ShowShareButtons: false
     ShowReadingTime: false
     # disableSpecial1stPost: true
     displayFullLangName: false
@@ -60,11 +60,11 @@ params:
     ShowCodeCopyButtons: true
     ShowToc: false
     # comments: false
-    images: ["papermod-cover.png"]
+    # images: ["papermod-cover.png"]
 
     profileMode:
         enabled: true
-        title: "Hi, There \U0001F44B!"
+        title: "Hi There \U0001F44B"
         # imageUrl: "#"
         # imageTitle: my image
         # imageWidth: 120
@@ -72,10 +72,10 @@ params:
         buttons:
             - name: About me
               url: about
+            # - name: Blog
+            #   url: blog
             - name: CV
               url: cv
-            - name: Blog
-              url: blog
 
     socialIcons:
         - name: email
