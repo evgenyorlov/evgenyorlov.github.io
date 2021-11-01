@@ -4,24 +4,24 @@ paginate: 10
 theme: hugo-PaperMod
 menu:
   main:
-    - name: About
-      url: about
-      weight: 5
     - name: CV
       url: cv
       weight: 5
-    - name: Archive
-      url: archives/
+    - name: About
+      url: about
       weight: 10
-    - name: Categories
-      url: categories/
-      weight: 15
-    - name: Tags
-      url: tags/
-      weight: 20
-    - name: Search
-      url: search/
-      weight: 25
+    # - name: Archive
+    #   url: archives/
+    #   weight: 15
+    # - name: Categories
+    #   url: categories/
+    #   weight: 20
+    # - name: Tags
+    #   url: tags/
+    #   weight: 25
+    # - name: Search
+    #   url: search/
+    #   weight: 30
 
 
 enableInlineShortcodes: true
