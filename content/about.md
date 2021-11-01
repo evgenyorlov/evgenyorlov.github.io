@@ -1,9 +1,9 @@
 ---
 title: "About Me"
 url: "/about"
-author: ""
+summary: ""
 ---
 
 Test info.
 
-My CV is available [here](./cv).
+My CV is available [here](../cv).

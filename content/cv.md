@@ -1,7 +1,10 @@
 ---
 title: "CV"
 url: "/cv"
-author: ""
+author: "---"
+summary: "+++"
 ---
 
 Tralala.
+
+Download as [pdf](eorlov_cv.pdf).
