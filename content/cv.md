@@ -6,6 +6,6 @@ author: " "
 
 Tralala.
 
-Download as [pdf](https://drive.google.com/file/d/1vMlKTIFg4a1YjIfOS4wJIJfcR5M-dpwA/view?usp=sharing).
+Download as [pdf](https://www.dropbox.com/s/ogdvmuudh3qbz69/eorlov_cv.pdf?dl=0).
 
-Download as [markdown](https://drive.google.com/file/d/1t31TKj6WpAvendCJrmNeyc50fcf6GO7W/view?usp=sharing).
+Download as [markdown](https://www.dropbox.com/s/1wcrhxaphqggda5/eorlov_cv.md?dl=0).
