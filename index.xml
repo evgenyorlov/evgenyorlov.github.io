@@ -4,10 +4,6 @@
     <title>Evgeny Orlov</title>
     <link>https://evgenyorlov.github.io/</link>
     <description>Recent content on Evgeny Orlov</description>
-    <image>
-      <url>https://evgenyorlov.github.io/papermod-cover.png</url>
-      <link>https://evgenyorlov.github.io/papermod-cover.png</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://evgenyorlov.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -56,12 +52,13 @@
     </item>
     
     <item>
-      <title>About</title>
+      <title>About Me</title>
       <link>https://evgenyorlov.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://evgenyorlov.github.io/about/</guid>
-      <description>Test info.</description>
+      <description>Test info.
+My CV is available here.</description>
     </item>
     
     
