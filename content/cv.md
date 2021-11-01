@@ -1,8 +1,7 @@
 ---
 title: "CV"
 url: "/cv"
-author: "---"
-summary: "+++"
+author: " "
 ---
 
 Tralala.
