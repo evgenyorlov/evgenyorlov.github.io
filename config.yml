@@ -80,12 +80,12 @@ params:
     socialIcons:
         - name: email
           url: "mailto:eugene.a.orlov@gmail.com"
-        - name: telegram
-          url: "https://t.me/eugeneorlov"
-        - name: github
-          url: "https://github.com/evgenyorlov"
         - name: linkedin
           url: "https://linkein.com"
+        - name: github
+          url: "https://github.com/evgenyorlov"
+        - name: telegram
+          url: "https://t.me/eugeneorlov"
 
     # label:
     #     text: "Home"
