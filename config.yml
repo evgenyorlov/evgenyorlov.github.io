@@ -4,8 +4,8 @@ paginate: 10
 theme: hugo-PaperMod
 menu:
   main:
-    - name: CV
-      url: cv
+    - name: Resume
+      url: resume
       weight: 5
     - name: About
       url: about
@@ -74,8 +74,8 @@ params:
               url: about
             # - name: Blog
             #   url: blog
-            - name: CV
-              url: cv
+            - name: Resume
+              url: resume
 
     socialIcons:
         - name: email
