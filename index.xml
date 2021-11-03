@@ -11,20 +11,19 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://evgenyorlov.github.io/about/</guid>
-      <description>Test info.
-My CV is available here.</description>
+      <description>My name is Evgeny Orlov. I am a machine learning engineer with more than 7 years of experience currently living in Moscow, Russia. The thing I like about the job the most is building ML-services that have a large impact on the users. Most Recently, I worked with a computer vision team on building a large pipeline to automatically extract and validate data from the document images using deep learning techniques.</description>
     </item>
     
     
     <item>
-      <title>Curriculum Vitae</title>
-      <link>https://evgenyorlov.github.io/cv/</link>
+      <title>Resume</title>
+      <link>https://evgenyorlov.github.io/resume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://evgenyorlov.github.io/cv/</guid>
-      <description>Tralala.
-Download as pdf.
-Download as markdown.</description>
+      <guid>https://evgenyorlov.github.io/resume/</guid>
+      <description>This resume is also available as pdf and markdown files.
+Work Experience Lead Deep Learning Engineer, Domclick | May 2018 – September 2021 The primary focus of our computer vision team was automatic data extraction from document images. The system worked with 60+ document types in real-time, capturing data from 9 document types with 40+ ML models (30+ neural networks) in production across 14 microservices.
+ Contributed to all system components.</description>
     </item>
     
     
