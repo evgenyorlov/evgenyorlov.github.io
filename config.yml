@@ -45,7 +45,7 @@ outputs:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "This is my personal blog"
+    description: "This is my personal site"
     author: Evgeny Orlov
     # author: ["Me", "You"] # multiple authors
 
