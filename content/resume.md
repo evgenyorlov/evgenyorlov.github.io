@@ -12,11 +12,11 @@ title: "Resume"
 url: "/resume"
 ---
 
-This resume is also available as [pdf](https://www.dropbox.com/s/1c75nwso33pfdwg/eorlov_cv_20211103.pdf?dl=0) and [markdown](https://www.dropbox.com/s/1wcrhxaphqggda5/eorlov_cv_20211103.md?dl=0) files.
+[pdf](https://www.dropbox.com/s/1c75nwso33pfdwg/eorlov_cv_20211103.pdf?dl=0) | [markdown](https://www.dropbox.com/s/1wcrhxaphqggda5/eorlov_cv_20211103.md?dl=0)
 
 ## Work Experience
 
-### Lead Deep Learning Engineer, [Domclick](https://domclick.ru) | May 2018 – September 2021
+#### Lead Deep Learning Engineer, [Domclick](https://domclick.ru) | May 2018 – September 2021
 
 The primary focus of our computer vision team was automatic data extraction from document images. The system worked with 60+ document types in real-time, capturing data from 9 document types with 40+ ML models (30+ neural networks) in production across 14 microservices.
 
@@ -29,14 +29,14 @@ The primary focus of our computer vision team was automatic data extraction from
 - Built several CV models for property listing moderation.
 - Organized and held a regular AI/ML seminar.
 
-### Data Scientist, [Flocktory](https://www.flocktory.com) | June 2015 – May 2018
+#### Data Scientist, [Flocktory](https://www.flocktory.com) | June 2015 – May 2018
 
 As a member of the R&D team at a SaaS startup aiming to improve marketing efficiency of e-commerce businesses, designed and implemented  
 - Large-scale intent prediction service which was a core part behind the customer segmentation product.
 - Coupon recommendation system which increased product revenue by 15% according to A/B tests.
 - Statistical pipeline behind the customer reactivation product.
 
-### Quantitative Risk Analyst, [AK BARS Finance](https://akbf.ru) | May 2013 – May 2015
+#### Quantitative Risk Analyst, [AK BARS Finance](https://akbf.ru) | May 2013 – May 2015
 
 My primary responsibility was to automate and improve risk assessment of derivatives portfolios.
 - Developed a trading terminal plugin for sensitivity analysis of options portfolios.
@@ -44,7 +44,7 @@ My primary responsibility was to automate and improve risk assessment of derivat
 
 ## Education
 
-### [Lomonosov Moscow State University](https://cs.msu.ru/en) | 2007 – 2012
+#### [Lomonosov Moscow State University](https://cs.msu.ru/en) | 2007 – 2012
 
 Specialist in Mathematics and System Programming (M.Sc. in Computer Science).
 
