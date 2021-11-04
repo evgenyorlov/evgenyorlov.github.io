@@ -81,7 +81,7 @@ params:
         - name: email
           url: "mailto:eugene.a.orlov@gmail.com"
         - name: linkedin
-          url: "https://linkedin.com"
+          url: "https://www.linkedin.com/in/evgeny-orlov-536a054a"
         - name: github
           url: "https://github.com/evgenyorlov"
         - name: telegram
