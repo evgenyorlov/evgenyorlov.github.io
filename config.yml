@@ -65,7 +65,7 @@ params:
     profileMode:
         enabled: true
         title: "Hi There \U0001F44B"
-        # imageUrl: "#"
+        imageUrl: "profile.jpg"
         # imageTitle: my image
         # imageWidth: 120
         # imageHeight: 120
