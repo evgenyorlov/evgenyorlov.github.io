@@ -4,6 +4,16 @@
     <title>Categories on Evgeny Orlov</title>
     <link>https://evgenyorlov.github.io/categories/</link>
     <description>Recent content in Categories on Evgeny Orlov</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://evgenyorlov.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 18 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://evgenyorlov.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>paper_summary</title>
+      <link>https://evgenyorlov.github.io/categories/paper_summary/</link>
+      <pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://evgenyorlov.github.io/categories/paper_summary/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
