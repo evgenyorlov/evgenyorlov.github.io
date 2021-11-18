@@ -10,9 +10,9 @@ menu:
     - name: About
       url: about
       weight: 10
-    # - name: Archive
-    #   url: archives/
-    #   weight: 15
+    - name: Archive
+      url: archives/
+      weight: 15
     # - name: Categories
     #   url: categories/
     #   weight: 20
@@ -72,10 +72,10 @@ params:
         buttons:
             - name: About me
               url: about
-            # - name: Blog
-            #   url: blog
-            - name: Resume
-              url: resume
+            - name: Blog
+              url: blog
+            # - name: Resume
+            #   url: resume
 
     socialIcons:
         - name: email
