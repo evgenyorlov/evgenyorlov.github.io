@@ -4,14 +4,14 @@ paginate: 10
 theme: hugo-PaperMod
 menu:
   main:
-    - name: Resume
-      url: resume
-      weight: 5
-    - name: About
-      url: about
-      weight: 10
     - name: Archive
       url: archives/
+      weight: 5
+    - name: Resume
+      url: resume
+      weight: 10
+    - name: About
+      url: about
       weight: 15
     # - name: Categories
     #   url: categories/
