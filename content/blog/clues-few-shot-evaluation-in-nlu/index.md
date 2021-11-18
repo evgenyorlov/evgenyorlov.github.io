@@ -14,9 +14,11 @@ What did authors try to accomplish?
 
 What were the key elements of the approach?
 
+## Dataset examples
+
 ![Examples](images/clues_examples.png)
 
-## Metric
+## Unified metric
 
 $$
 \text{S1}(\mathbf{p}, \mathbf{a}) = \begin{cases}
@@ -25,3 +27,9 @@ $$
     0.0 &\text{otherwise}
 \end{cases}
 $$
+
+## Baseline results
+
+![classification](images/classification_results.png)
+
+![mrc](images/mrc_results.png)
