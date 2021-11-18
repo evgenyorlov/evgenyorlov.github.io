@@ -28,5 +28,13 @@ $$
  \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
 $$
 
+$$
+S1(p, a) = \begin{cases}
+   a &\text{if a \not = \emptyset, p \not = \emptyset, p(p, a)r(p, a) \not = 0} \\
+   1.0 &\text{if a = \emptyset, p = \emptyset} \\
+   0.0 &\text{otherwise}
+\end{cases}
+$$
+
 
 ![Examples](images/clues_examples.png)
