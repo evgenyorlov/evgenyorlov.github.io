@@ -8,6 +8,10 @@ tags: ["few_shot", "nlp", "nlu", "dataset"]
 draft: true
 math: true
 cover.image: 'images/clues_examples.png'
+cover.hiddenInList: false
+cover.hiddenInSingle: false
+cover.hidden: false
+cover.responsiveImages: false
 ---
 
 |             |                                    |
@@ -20,17 +24,20 @@ cover.image: 'images/clues_examples.png'
 | Conference  | NeurIPS 2021                       |
 
 
-# What did authors try to accomplish?
+What did authors try to accomplish?
 
-# What were the key elements of the approach?
+What were the key elements of the approach?
 
 $$
  \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
 $$
 
+Some text in between
+, p(p, a)r(p, a) \not = 0
+
 $$
 S1(p, a) = \begin{cases}
-   a &\text{if a \not = \emptyset, p \not = \emptyset, p(p, a)r(p, a) \not = 0} \\
+   a &\text{if a \not = \emptyset, p \not = \emptyset} \\
    1.0 &\text{if a = \emptyset, p = \emptyset} \\
    0.0 &\text{otherwise}
 \end{cases}
