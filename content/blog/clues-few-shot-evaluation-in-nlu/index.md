@@ -7,16 +7,20 @@ categories: ["paper_summary"]
 tags: ["few_shot", "nlp", "nlu", "dataset"]
 draft: true
 math: true
-cover.image: 'images/clues_examples.png'
+cover.image: 'clues_examples.png'
 cover.hiddenInList: false
 cover.hiddenInSingle: false
 cover.hidden: false
 cover.responsiveImages: false
 ---
 
-[Paper URL](https://arxiv.org/abs/2111.02570) | [Code URL](https://github.com/microsoft/CLUES)
+[Paper URL](https://arxiv.org/abs/2111.02570) | [Code and dataset URL](https://github.com/microsoft/CLUES)
 
 What did authors try to accomplish?
+
+$$
+ \varphi = 1+\frac{1} {2}
+$$
 
 What were the key elements of the approach?
 
