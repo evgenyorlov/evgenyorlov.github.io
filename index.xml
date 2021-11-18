@@ -12,7 +12,12 @@
       <pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://evgenyorlov.github.io/blog/clues-few-shot-evaluation-in-nlu/</guid>
-      <description>New dataset for NLU evaluation in the few-shot setting by Microsoft Research</description>
+      <description>Paper URL | Code and dataset URL
+What did authors try to accomplish?
+What were the key elements of the approach?
+$$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$
+Some text in between , p(p, a)r(p, a) \not = 0
+$$ \text{S1}(\mathbf{p}, \mathbf{a}) = \begin{cases} a &amp;amp;\text{if } \mathbf{a} \not = \emptyset, \mathbf{p} \not = \emptyset \ 1.0 &amp;amp;\text{if } a = \emptyset, p = \emptyset \ 0.0 &amp;amp;\text{otherwise} \end{cases} $$</description>
     </item>
     
     <item>
