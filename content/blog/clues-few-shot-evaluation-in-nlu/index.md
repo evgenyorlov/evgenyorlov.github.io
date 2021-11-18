@@ -23,23 +23,15 @@ Some text in between
 
 $$
 \text{S1}(\mathbf{p}, \mathbf{a}) = \begin{cases}
-   a &\text{if } \mathbf{a} \not = \emptyset, \mathbf{p} \not = \emptyset \\
-   1.0 &\text{if } a = \emptyset, p = \emptyset \\
-   0.0 &\text{otherwise}
+    \frac{2.0}{\frac{1}{\text{p}(\mathbf{p}, \mathbf{a})} + \frac{1}{\text{r}((\mathbf{p}, \mathbf{a}))}} &\text{if } \mathbf{a} \not = \emptyset, \mathbf{p} \not = \emptyset \newline
+    1.0 &\text{if } a = \emptyset, p = \emptyset \\
+    0.0 &\text{otherwise}
 \end{cases}
 $$
 
 $$
 x = \begin{cases}
-   a &\text{if } b \\
-
-   c &\text{if } d
-\end{cases}
-$$
-
-$$
-x = \begin{cases}
-   a &\text{if } b
+   a &\text{if } b \newline
    c &\text{if } d
 \end{cases}
 $$
