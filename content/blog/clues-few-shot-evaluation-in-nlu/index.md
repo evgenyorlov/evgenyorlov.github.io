@@ -7,6 +7,7 @@ categories: ["paper_summary"]
 tags: ["few_shot", "nlp", "nlu", "dataset"]
 draft: true
 math: true
+cover.image: 'images/clues_examples.jpg'
 ---
 
 |             |                                    |
