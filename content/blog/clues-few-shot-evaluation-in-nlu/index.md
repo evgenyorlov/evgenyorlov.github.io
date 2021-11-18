@@ -11,7 +11,8 @@ cover.image: 'clues_examples.png'
 cover.hiddenInList: false
 cover.hiddenInSingle: false
 cover.hidden: false
-cover.responsiveImages: false
+cover.responsiveImages: true
+cover.linkFullImages: false
 ---
 
 [Paper URL](https://arxiv.org/abs/2111.02570) | [Code and dataset URL](https://github.com/microsoft/CLUES)
