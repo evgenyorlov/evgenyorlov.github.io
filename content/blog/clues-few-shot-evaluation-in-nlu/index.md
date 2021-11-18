@@ -13,7 +13,7 @@ math: true
 | :---------- | :--------------------------------- |
 | Paper URL   | https://arxiv.org/abs/2111.02570   |
 | Code URL    | https://github.com/microsoft/CLUES |
-| Authors     | Subhabrata Mukherjee et al         |
+| Authors     | Subhabrata Mukherjee et al.        |
 | Institution | Microsoft Research                 |
 | Year        | 2021                               |
 | Conference  | NeurIPS 2021                       |
