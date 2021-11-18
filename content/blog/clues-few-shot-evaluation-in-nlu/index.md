@@ -14,15 +14,7 @@ cover.hidden: false
 cover.responsiveImages: false
 ---
 
-|             |                                    |
-| :---------- | :--------------------------------- |
-| Paper URL   | https://arxiv.org/abs/2111.02570   |
-| Code URL    | https://github.com/microsoft/CLUES |
-| Authors     | Subhabrata Mukherjee et al.        |
-| Institution | Microsoft Research                 |
-| Year        | 2021                               |
-| Conference  | NeurIPS 2021                       |
-
+[Paper URL](https://arxiv.org/abs/2111.02570) | [Code URL](https://github.com/microsoft/CLUES)
 
 What did authors try to accomplish?
 
@@ -40,6 +32,13 @@ S1(p, a) = \begin{cases}
    a &\text{if a \not = \emptyset, p \not = \emptyset} \\
    1.0 &\text{if a = \emptyset, p = \emptyset} \\
    0.0 &\text{otherwise}
+\end{cases}
+$$
+
+$$
+x = \begin{cases}
+   a &\text{if } b \\
+   c &\text{if } d
 \end{cases}
 $$
 
