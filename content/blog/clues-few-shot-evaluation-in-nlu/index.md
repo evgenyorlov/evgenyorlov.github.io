@@ -78,7 +78,7 @@ P_b(i) = \frac{\text{exp}(\mathbf{w_b^T h_i})}{\sum_k \text{exp}(\mathbf{w_b^T h
 $$
 
 $$
-P_e(j) = \frac{\text{exp}(\mathbf{w_e^T h_i})}{\sum_k \text{exp}(\mathbf{w_e^T h_k})},
+P_e(j) = \frac{\text{exp}(\mathbf{w_e^T h_j})}{\sum_k \text{exp}(\mathbf{w_e^T h_k})},
 $$
 
 $$
@@ -89,7 +89,7 @@ $$
 
 - Due to the gap between pre-training and task objectives, the few-shot setting is challenging for classic fine-tuning (not enough data to learn task-specific head effectively).
 - Prompt-based fine-tuning tries to address this gap, by formulating task objective in a format as close to the pretraining objective as possible.
-- The illustration of the idea taken from [the original paper](https://aclanthology.org/2021.acl-long.295.pdf) is show below
+- The illustration of the idea taken from [the original paper](https://aclanthology.org/2021.acl-long.295.pdf) is shown below
 
 ![PT](images/prompt_based_ft.png)
 
@@ -100,6 +100,22 @@ $$
 
 ### Analysis of results
 
+The results are shown below.
+
 ![classification](images/classification_results.png)
 
 ![mrc](images/mrc_results.png)
+
+- **Fine-tuning strategies:**
+    - PT consistently outperforms FT in the few shot setting as expected.
+    - However, in the fully supervised setting the advantage disappears.
+    - GPT-3 ICL performance significantly deteriorates with the increased task difficulty.
+    - PT yields close to random performance for complex NER and MRC tasks.
+- **Training labels:** significant gap between few-shot and fully supervised settings
+- **Model variance:**
+  - For FT larger models usually display higher variance.
+  - For PT this effect is less pronounced.
+- **Task difficulty:** it matters a lot. For NER and MRC tasks results in the few-shot setting are close to random performance.
+- **Model vs. human performance**:
+  - In the fully supervised setting models exceed human performance for all the tasks.
+  - However, the results are much worse when it comes to the few-shot setting.
