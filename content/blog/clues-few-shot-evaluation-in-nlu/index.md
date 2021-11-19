@@ -59,17 +59,38 @@ $$
 
 For a test set consisting of multiple instances, the overall _S1_ score is computed as the average of _S1_ scores of all the instances.
 
-Using this metric authors carefully estimate human performance on the tasks and compare it with a number of fined-tuned pretrained language models.
+Using this metric authors carefully estimate human performance on the tasks and compare it with a number of fined-tuned pretrained language models (PLM).
 
 ### Fine-tuning strategies
 
 #### Classic fine-tuning (FT)
 
+- Input is in the format "```[CLS] [question] [passage]```".
+- Both task-specific head and weights are updated jointly
+- The training is carried out by maximizing the log-likelihood of the answer span, which is defined as follows
+
+$$
+P(i, j) = P_b(i) \cdot P_e(j)
+$$
+
+$$
+P_b(i) = \frac{\text{exp}(\mathbf{w_b^T h_i})}()}{\sum_j \text{exp}(\mathbf{w_b^T h_j})},
+$$
+
+$$
+P_e(j) = \frac{\text{exp}(\mathbf{w_e^T h_i})}()}{\sum_j \text{exp}(\mathbf{w_e^T h_j})},
+$$
+
+$$
+\mathbf{h_1}, \mathbf{h_2}, , \mathbf{h_T} \in \R^d - \text{contextualized token embeddings of the input produced by the PLM.}
+$$
+
 
 #### Prompt-based fine-tuning (PT)
 
+![PT](images/prompt_based_ft.png)
 
-#### GPT-3 in-context learning
+#### GPT-3 in-context learning (ICL)
 
 
 ### Analysis of results
