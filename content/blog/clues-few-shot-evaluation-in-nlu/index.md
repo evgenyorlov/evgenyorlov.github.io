@@ -10,15 +10,13 @@ math: true
 
 [Paper URL](https://arxiv.org/abs/2111.02570) | [Code and dataset URL](https://github.com/microsoft/CLUES)
 
-Most current benchmarks for natural language understanding (NLU) (e.g. [GLUE](https://aclanthology.org/W18-5446/), [SuperGLUE](https://proceedings.neurips.cc/paper/2019/file/4496bf24afe7fab6f046bf4923da8de6-Paper.pdf)) contain tasks that are easily represented as classification tasks and provide models with large amount of task-specific training data. In this circumstances, when some model exceeds "human-level" performance on these benchamarks, it's not completely comparable to humans who perform these tasks given only a few demonstrations.
+Most current benchmarks for natural language understanding (NLU) (e.g. [GLUE](https://aclanthology.org/W18-5446/), [SuperGLUE](https://proceedings.neurips.cc/paper/2019/file/4496bf24afe7fab6f046bf4923da8de6-Paper.pdf)) contain tasks that are easily represented as classification tasks and provide models with large amount of task-specific training data. In these circumstances, when some model exceeds "human-level" performance on these benchmarks, it's not completely comparable to humans who perform these tasks given only a few demonstrations.
 
-To combat this limitation authors seek to provide a standardized evaluation of different few-shot learning approaches and demonstrate a significant gap in the few-shot learning performance between humans and machines for NLU tasks. Their CLUES benchmark is intended to evaluate general-purpose models across diverse NLU tasks in few-shot setting.
+To combat this limitation authors seek to provide a standardized evaluation of different few-shot learning approaches and demonstrate a significant gap in the few-shot learning performance between humans and machines for NLU tasks. Their **CLUES benchmark** is intended to evaluate general-purpose models across diverse NLU tasks in few-shot setting.
 
 ## Benchmark composition
 
-The CLUES benchmark consists of a set of tasks.
-
-Each task is a collection that consists of
+The CLUES benchmark includes a number of tasks. Each task is a collection that consists of
 - a natural language task description;
 - training sets of labeled examples for different shots (5 training sets for each of 10, 20, 30 shots);
 - a test set (with no separate validation set)
@@ -26,11 +24,11 @@ Each task is a collection that consists of
 The tasks were selected so they are diverse and there exists **a significant gap between human and machine performance**.
 Overview of the tasks included in the benchmark can be seen in the table below.
 
-![tasks](image/tasks_overview.png)
+![tasks](images/tasks_overview.png)
 
 Authors unify all NLU tasks with the single format _{context, question/prompt, answer}_ where the answer is given a set of spans that could be potentially empty.
 
-Examples from the dataset for each task are given below.
+Examples from the dataset for each task are given below. The
 
 ![Examples](images/clues_examples.png)
 ## Baseline results
@@ -45,9 +43,11 @@ $$
     1.0 &\text{if } a = \emptyset, p = \emptyset \newline
     0.0 &\text{otherwise}
 \end{cases}
+$$
 
-\text{where}
+where
 
+$$
 \text{precision} \text{p}(\mathbf{p}, \mathbf{a}) = \sum_i \frac{1(\mathbf{p_i} \in \mathbf{a})}{|\mathbf{p}|}
 
 \text{recall}  \text{r}(\mathbf{p}, \mathbf{a}) = \sum_i \frac{1(\mathbf{p_i} \in \mathbf{a})}{|\mathbf{a}|}
