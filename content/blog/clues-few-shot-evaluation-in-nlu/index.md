@@ -65,8 +65,8 @@ Using this metric authors carefully estimate human performance on the tasks and 
 
 #### Classic fine-tuning (FT)
 
-- Input is in the format "```[CLS] [question] [passage]```".
-- Both task-specific head and weights are updated jointly
+- Input is in the format ```"[CLS] [question] [passage]"```.
+- Both task-specific head and weights are updated jointly.
 - The training is carried out by maximizing the log-likelihood of the answer span, which is defined as follows
 
 $$
@@ -74,24 +74,29 @@ P(i, j) = P_b(i) \cdot P_e(j)
 $$
 
 $$
-P_b(i) = \frac{\text{exp}(\mathbf{w_b^T h_i})}()}{\sum_j \text{exp}(\mathbf{w_b^T h_j})},
+P_b(i) = \frac{\text{exp}(\mathbf{w_b^T h_i})}{\sum_k \text{exp}(\mathbf{w_b^T h_k})},
 $$
 
 $$
-P_e(j) = \frac{\text{exp}(\mathbf{w_e^T h_i})}()}{\sum_j \text{exp}(\mathbf{w_e^T h_j})},
+P_e(j) = \frac{\text{exp}(\mathbf{w_e^T h_i})}{\sum_k \text{exp}(\mathbf{w_e^T h_k})},
 $$
 
 $$
-\mathbf{h_1}, \mathbf{h_2}, , \mathbf{h_T} \in \R^d - \text{contextualized token embeddings of the input produced by the PLM.}
+\mathbf{h_1}, \mathbf{h_2}, \ldots, \mathbf{h_T} \in \R^d - \text{contextualized token embeddings of the input produced by the PLM.}
 $$
-
 
 #### Prompt-based fine-tuning (PT)
+
+- Due to the gap between pre-training and task objectives, the few-shot setting is challenging for classic fine-tuning (not enough data to learn task-specific head effectively).
+- Prompt-based fine-tuning tries to address this gap, by formulating task objective in a format as close to the pretraining objective as possible.
+- The illustration of the idea taken from [the original paper](https://aclanthology.org/2021.acl-long.295.pdf) is show below
 
 ![PT](images/prompt_based_ft.png)
 
 #### GPT-3 in-context learning (ICL)
 
+- In-context training is introduced by [GPT-family of models](https://arxiv.org/pdf/2005.14165v4.pdf).
+- Authors conduct evaluations by directly querying GPT-3 without any parameter update with _k_ labeled examples as demonstrations for each example in the test set.
 
 ### Analysis of results
 
