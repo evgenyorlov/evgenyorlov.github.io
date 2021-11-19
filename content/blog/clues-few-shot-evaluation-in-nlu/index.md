@@ -26,12 +26,14 @@ Overview of the tasks can be seen in the table below.
 
 ![tasks](images/tasks_overview.png)
 
-Authors _unify all NLU tasks_ with the single format _{context, question/prompt, answer}_ where the answer is given a set of spans that could be potentially empty.
+Authors _unify all NLU tasks_ with the single format _{context, question/prompt, answer}_ where the answer is a set of spans that could be potentially empty.
 
 Examples from the dataset for each task are given below. The answer spans are highlighted in red.
 
 ![Examples](images/clues_examples.png)
 ## Baseline results
+
+### Evaluation metric
 
 Authors introduce a _unified metric_ which can be used to evaluate all tasks in the benchmark. The metric is, essentially, [F1](https://en.wikipedia.org/wiki/F-score) that is modified to work with potentially empty set of spans.
 
@@ -58,6 +60,19 @@ $$
 For a test set consisting of multiple instances, the overall _S1_ score is computed as the average of _S1_ scores of all the instances.
 
 Using this metric authors carefully estimate human performance on the tasks and compare it with a number of fined-tuned pretrained language models.
+
+### Fine-tuning strategies
+
+#### Classic fine-tuning (FT)
+
+
+#### Prompt-based fine-tuning (PT)
+
+
+#### GPT-3 in-context learning
+
+
+### Analysis of results
 
 ![classification](images/classification_results.png)
 
