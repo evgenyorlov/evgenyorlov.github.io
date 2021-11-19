@@ -4,7 +4,6 @@ title: "Paper Summary: CLUES Few-Shot Learning Evaluation in Natural Language Un
 date: "2021-11-19"
 categories: ["paper_summary"]
 tags: ["few_shot", "nlp", "nlu", "dataset"]
-draft: true
 math: true
 ---
 
@@ -111,7 +110,7 @@ The results are shown below.
     - However, in the fully supervised setting the advantage disappears.
     - GPT-3 ICL performance significantly deteriorates with the increased task difficulty.
     - PT yields close to random performance for complex NER and MRC tasks.
-- **Training labels:** significant gap between few-shot and fully supervised settings
+- **Training labels:** significant gap between few-shot and fully supervised settings.
 - **Model variance:**
   - For FT larger models usually display higher variance.
   - For PT this effect is less pronounced.
