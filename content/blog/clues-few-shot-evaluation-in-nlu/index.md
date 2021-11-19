@@ -1,7 +1,7 @@
 ---
 author: "Evgeny Orlov"
 title: "Paper Summary: CLUES Few-Shot Learning Evaluation in Natural Language Understanding"
-date: "2021-11-18"
+date: "2021-11-19"
 categories: ["paper_summary"]
 tags: ["few_shot", "nlp", "nlu", "dataset"]
 draft: true
@@ -22,18 +22,18 @@ The CLUES benchmark includes a number of tasks. Each task is a collection that c
 - a test set (with no separate validation set)
 
 The tasks were selected so they are diverse and there exists **a significant gap between human and machine performance**.
-Overview of the tasks included in the benchmark can be seen in the table below.
+Overview of the tasks can be seen in the table below.
 
 ![tasks](images/tasks_overview.png)
 
-Authors unify all NLU tasks with the single format _{context, question/prompt, answer}_ where the answer is given a set of spans that could be potentially empty.
+Authors _unify all NLU tasks_ with the single format _{context, question/prompt, answer}_ where the answer is given a set of spans that could be potentially empty.
 
-Examples from the dataset for each task are given below. The
+Examples from the dataset for each task are given below. The answer spans are highlighted in red.
 
 ![Examples](images/clues_examples.png)
 ## Baseline results
 
-Authors introduce a _unified metric_ which can be used to evaluate all tasks in the benchmark. The metric is, essentially, F1 modified to wotk with potentially empty set of spans.
+Authors introduce a _unified metric_ which can be used to evaluate all tasks in the benchmark. The metric is, essentially, [F1](https://en.wikipedia.org/wiki/F-score) that is modified to work with potentially empty set of spans.
 
 Formally, given a set of spans for model predictions **p**, and a set of spans for ground truth answers **a** for one instance, the per instance _S1_ is defined as follows:
 
@@ -49,17 +49,20 @@ where
 
 $$
 \text{precision} \text{p}(\mathbf{p}, \mathbf{a}) = \sum_i \frac{1(\mathbf{p_i} \in \mathbf{a})}{|\mathbf{p}|}
+$$
 
+$$
 \text{recall}  \text{r}(\mathbf{p}, \mathbf{a}) = \sum_i \frac{1(\mathbf{p_i} \in \mathbf{a})}{|\mathbf{a}|}
 $$
 
-For a test set consisting of multiple instances, the overall _S1_ score is computed as the average _S1_ scores of all the instances.
+$$
+\text{r}(\mathbf{p}, \mathbf{a}) = \frac{1(\mathbf{p_i} \in \mathbf{a})}{|\mathbf{a}|}
+$$
 
+For a test set consisting of multiple instances, the overall _S1_ score is computed as the average of _S1_ scores of all the instances.
+
+Using this metric authors carefully estimate human performance on the tasks and compare it with a number of fined-tuned pretrained language models.
 
 ![classification](images/classification_results.png)
 
 ![mrc](images/mrc_results.png)
-
-
-Some limitations:
-  - multi-task and cross-task few shot learning is not addressed
