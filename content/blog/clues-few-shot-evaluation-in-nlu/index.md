@@ -39,24 +39,20 @@ Formally, given a set of spans for model predictions **p**, and a set of spans f
 
 $$
 \text{S1}(\mathbf{p}, \mathbf{a}) = \begin{cases}
-    \frac{2.0}{\frac{1}{\text{p}(\mathbf{p}, \mathbf{a})} + \frac{1}{\text{r}(\mathbf{p}, \mathbf{a})}} &\text{if } \mathbf{a} \not = \emptyset, \mathbf{p} \not = \emptyset, \text{p}(\mathbf{p}, \mathbf{a}) \cdot \text{r}(\mathbf{p}, \mathbf{a}) \not = 0 \newline
-    1.0 &\text{if } a = \emptyset, p = \emptyset \newline
-    0.0 &\text{otherwise}
+    \frac{2.0}{\frac{1}{\text{p}(\mathbf{p}, \mathbf{a})} + \frac{1}{\text{r}(\mathbf{p}, \mathbf{a})}} &\text{if } \mathbf{a} \not = \emptyset, \mathbf{p} \not = \emptyset, \text{p}(\mathbf{p}, \mathbf{a}) \cdot \text{r}(\mathbf{p}, \mathbf{a}) \not = 0, \newline
+    1.0 &\text{if } a = \emptyset, p = \emptyset, \newline
+    0.0 &\text{otherwise.}
 \end{cases}
 $$
 
 where
 
 $$
-\text{precision} \text{p}(\mathbf{p}, \mathbf{a}) = \sum_i \frac{1(\mathbf{p_i} \in \mathbf{a})}{|\mathbf{p}|}
+\text{precision } \text{p}(\mathbf{p}, \mathbf{a}) = \sum_i \frac{1(\mathbf{p_i} \in \mathbf{a})}{|\mathbf{p}|},
 $$
 
 $$
-\text{recall}  \text{r}(\mathbf{p}, \mathbf{a}) = \sum_i \frac{1(\mathbf{p_i} \in \mathbf{a})}{|\mathbf{a}|}
-$$
-
-$$
-\text{r}(\mathbf{p}, \mathbf{a}) = \frac{1(\mathbf{p_i} \in \mathbf{a})}{|\mathbf{a}|}
+\text{recall }  \text{r}(\mathbf{p}, \mathbf{a}) = \sum_i \frac{1(\mathbf{p_i} \in \mathbf{a})}{|\mathbf{a}|}.
 $$
 
 For a test set consisting of multiple instances, the overall _S1_ score is computed as the average of _S1_ scores of all the instances.
