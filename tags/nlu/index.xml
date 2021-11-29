@@ -8,10 +8,10 @@
     <lastBuildDate>Fri, 19 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://evgenyorlov.github.io/tags/nlu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Paper Summary: CLUES Few-Shot Learning Evaluation in Natural Language Understanding</title>
-      <link>https://evgenyorlov.github.io/blog/clues-few-shot-evaluation-in-nlu/</link>
+      <link>https://evgenyorlov.github.io/posts/clues-few-shot-evaluation-in-nlu/</link>
       <pubDate>Fri, 19 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://evgenyorlov.github.io/blog/clues-few-shot-evaluation-in-nlu/</guid>
+      <guid>https://evgenyorlov.github.io/posts/clues-few-shot-evaluation-in-nlu/</guid>
       <description>Paper URL | Code and dataset URL
 Most current benchmarks for natural language understanding (NLU) (e.g. GLUE, SuperGLUE) contain tasks that are easily represented as classification tasks and provide models with large amount of task-specific training data. In these circumstances, when some model exceeds &amp;ldquo;human-level&amp;rdquo; performance on these benchmarks, it&amp;rsquo;s not completely comparable to humans who perform these tasks given only a few demonstrations.
 To combat this limitation authors seek to provide a standardized evaluation of different few-shot learning approaches and demonstrate a significant gap in the few-shot learning performance between humans and machines for NLU tasks.</description>
