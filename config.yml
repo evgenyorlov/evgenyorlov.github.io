@@ -74,7 +74,7 @@ params:
             - name: About me
               url: about
             - name: Blog
-              url: blog
+              url: posts
             # - name: Resume
             #   url: resume
 
