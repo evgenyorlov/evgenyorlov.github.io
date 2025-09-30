@@ -29,7 +29,7 @@ defaultBackgroundImage = "background.jpg" # used as default for background image
 
 highlightCurrentMenuArea = true
 smartTOC = true
-smartTOCHideUnfocusedChildren = true
+smartTOCHideUnfocusedChildren = false
 
 fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384", "sha256"
 
@@ -51,7 +51,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   #homepageImage = "IMAGE.jpg" # used in: hero, and card
   showRecent = true
   showRecentItems = 3
-  showMoreLink = false
+  showMoreLink = true
   showMoreLinkDest = "/posts/"
   cardView = false
   cardViewScreenWidth = false
@@ -66,7 +66,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showDateUpdated = false
   showAuthor = true
   # showAuthorBottom = false
-  showHero = true
+  showHero = false
   # heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
