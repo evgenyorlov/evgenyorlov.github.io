@@ -2,32 +2,32 @@ disabled = false
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "Blowfish"
+title = "Evgeny Orlov"
 
 [params]
 displayName = "EN"
 isoCode = "en"
 rtl = false
 dateFormat = "2 January 2006"
-logo = "img/logo.png"
+# logo = "img/logo.png"
 # secondaryLogo = "img/secondary-logo.png"
 description = "My awesome website"
-copyright = "Copy, _right?_ :thinking_face:"
+copyright = "Background photo by <a href=\"https://unsplash.com/@honza_kahanek?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\">Jan Kahánek</a> on <a href=\"https://unsplash.com/photos/brown-pencil-on-white-book-page-fVUl6kzIvLg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\">Unsplash</a>"
 
 [params.author]
 name = "Evgeny Orlov"
 email = "eugene.a.orlov@gmail.com"
-image = "img/logo.png"
+image = "profile.png"
 #   imageQuality = 96
-headline = "I'm only human"
+headline = "Machine Learning Engineer"
 bio = "A little bit about you"
 links = [
-    { email = "mailto:hello@your_domain.com" },
+    { email = "mailto:eugene.a.orlov@gmail.com" },
     # { link = "https://link-to-some-website.com/" },
     # { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
     # { apple = "https://www.apple.com" },
     # { blogger = "https://username.blogspot.com/" },
-    # { bluesky = "https://bsky.app/profile/username" },
+    { bluesky = "https://bsky.app/profile/username" },
     # { codepen = "https://codepen.io/username" },
     # { dev = "https://dev.to/username" },
     # { discord = "https://discord.gg/invitecode" },
