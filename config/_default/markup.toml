@@ -1,26 +1,20 @@
-# Markdown renderer configuration
-[goldmark.renderer]
-unsafe = true
+# -- Markup --
+# These settings are required for the theme to function.
 
-[goldmark.extensions.passthrough]
-enable = true
+[goldmark]
+  [goldmark.renderer]
+    unsafe = true
 
-# LaTeX math support
-# https://gohugo.io/content-management/mathematics/
-[goldmark.extensions.passthrough.delimiters]
-block = [['\[', '\]'], ['$$', '$$']]
-inline = [['\(', '\)']]
-
-[tableOfContents]
-endLevel = 4
-ordered = true
-startLevel = 2
+  [goldmark.extensions]
+    [goldmark.extensions.passthrough]
+      enable = true
+      [goldmark.extensions.passthrough.delimiters]
+        block = [['\[', '\]'], ['$$', '$$']]
+        inline = [['\(', '\)']]
 
 [highlight]
-noClasses = false
-codeFences = true
-guessSyntax = true
-lineNoStart = 1
-lineNos = true
-lineNumbersInTable = true
-tabWidth = 4
+  noClasses = false
+
+[tableOfContents]
+  startLevel = 2
+  endLevel = 4
