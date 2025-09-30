@@ -7,7 +7,7 @@ showBreadcrumbs: false
 showTableOfContents: false
 showTaxonomies: false
 showComments: false
-title: "Contact Information"
+title: "About me"
 ---
 
 Blablabla
