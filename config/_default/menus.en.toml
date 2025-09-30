@@ -15,6 +15,11 @@ name = "Posts"
 pageRef = "posts"
 weight = 10
 
+[[main]]
+name = "Contact"
+weight = 20
+pageRef = "contact"
+
 #[[main]]
 #  name = "Parent"
 #  weight = 20
@@ -31,10 +36,10 @@ weight = 10
 #  pageRef = "posts"
 #  weight = 20
 
-#[[subnavigation]]
-#  name = "An interesting topic"
-#  pageRef = "tags/interesting-topic"
-#  weight = 10
+[[subnavigation]]
+name = "An interesting topic"
+pageRef = "tags/space"
+weight = 30
 
 #[[subnavigation]]
 #  name = "My Awesome Category"
@@ -47,10 +52,10 @@ weight = 10
 #  pageRef = "categories"
 #  weight = 20
 
-#[[main]]
-#  name = "Tags"
-#  pageRef = "tags"
-#  weight = 30
+[[main]]
+name = "Tags"
+pageRef = "tags"
+weight = 40
 
 
 # -- Footer Menu --
@@ -58,10 +63,10 @@ weight = 10
 # the copyright notice. Configure as per the main menu above.
 
 
-[[footer]]
-name = "Tags"
-pageRef = "tags"
-weight = 10
+# [[footer]]
+# name = "Tags"
+# pageRef = "tags"
+# weight = 10
 
 # [[footer]]
 #   name = "Categories"
