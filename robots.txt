@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://eorlov.com/sitemap.xml
+Sitemap: https://www.eorlov.com/sitemap.xml
