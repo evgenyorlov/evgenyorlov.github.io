@@ -36,10 +36,10 @@ pageRef = "contact"
 #  pageRef = "posts"
 #  weight = 20
 
-[[subnavigation]]
-name = "An interesting topic"
-pageRef = "tags/space"
-weight = 30
+# [[subnavigation]]
+# name = "An interesting topic"
+# pageRef = "tags/space"
+# weight = 30
 
 #[[subnavigation]]
 #  name = "My Awesome Category"
