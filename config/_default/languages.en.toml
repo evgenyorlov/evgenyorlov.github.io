@@ -2,7 +2,7 @@ disabled = false
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "Evgeny Orlov"
+title = "Home"
 
 [params]
 displayName = "EN"
@@ -11,7 +11,7 @@ rtl = false
 dateFormat = "2 January 2006"
 # logo = "img/logo.png"
 # secondaryLogo = "img/secondary-logo.png"
-description = "My awesome website"
+# description = "My awesome website"
 copyright = "Background photo by <a href=\"https://unsplash.com/@honza_kahanek?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\">Jan Kahánek</a> on <a href=\"https://unsplash.com/photos/brown-pencil-on-white-book-page-fVUl6kzIvLg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash\">Unsplash</a>"
 
 [params.author]
@@ -19,8 +19,8 @@ name = "Evgeny Orlov"
 email = "eugene.a.orlov@gmail.com"
 image = "profile.png"
 #   imageQuality = 96
-headline = "Machine Learning Engineer"
-bio = "A little bit about you"
+headline = "👋 Welcome to my personal website"
+bio = "Machine Learning Engineer"
 links = [
     { email = "mailto:eugene.a.orlov@gmail.com" },
     # { link = "https://link-to-some-website.com/" },
