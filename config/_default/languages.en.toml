@@ -16,18 +16,18 @@ dateFormat = "2 January 2006"
 
 [params.author]
 name = "Evgeny Orlov"
-email = "eugene.a.orlov@gmail.com"
+email = "mail@eorlov.com"
 image = "profile.png"
 #   imageQuality = 96
 headline = "👋 Welcome to my personal website"
 bio = "Machine Learning Engineer"
 links = [
-    { email = "mailto:eugene.a.orlov@gmail.com" },
+    { email = "mailto:mail@eorlov.com" },
     # { link = "https://link-to-some-website.com/" },
     # { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
     # { apple = "https://www.apple.com" },
     # { blogger = "https://username.blogspot.com/" },
-    { bluesky = "https://bsky.app/profile/username" },
+    { bluesky = "https://bsky.app/profile/eorlov.com" },
     # { codepen = "https://codepen.io/username" },
     # { dev = "https://dev.to/username" },
     # { discord = "https://discord.gg/invitecode" },
